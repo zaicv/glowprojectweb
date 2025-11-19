@@ -26,8 +26,8 @@ import FolderDashboard from "./pages/lateron/FolderDashboard";
 import GlowFieldPage from "./pages/lateron/GlowField";
 import GPTs from "./pages/lateron/GPTsSelection";
 import MoneyCopilot from "./pages/lateron/miney";
-import TheGlowProject from "./pages/lateron/TheGlowProject.com/About";
-import GlowGPT from "./pages/lateron/TheGlowProject.com/GlowGPT";
+import TheGlowProject from "./pages/TheGlowProject.com/About";
+import GlowGPT from "./pages/TheGlowProject.com/GlowGPT";
 import Memories from "./pages/Memory/Memories";
 import PersonaDesigner from "./pages/Personas/PersonaDesigner";
 import Personas from "./pages/Personas/Personas";
@@ -42,20 +42,19 @@ import YouTube from "./pages/Superpowers/YouTube";
 
 import { useElectronMenu } from "@/hooks/useElectronMenu";
 import { FullChatApp } from "./pages/Chat/FullChatApp";
-import ARSAFoundation from "./pages/lateron/TheGlowProject.com/ARSAFoundation";
-import GlowProcess from "./pages/lateron/TheGlowProject.com/GlowProcess";
-import TheGlowFoundation from "./pages/lateron/TheGlowProject.com/TheGlowFoundation";
+import ARSAFoundation from "./pages/TheGlowProject.com/ARSAFoundation";
+import GlowProcess from "./pages/TheGlowProject.com/GlowProcess";
+import TheGlowFoundation from "./pages/TheGlowProject.com/TheGlowFoundation";
 import MindGarden from "./pages/MindGarden/MIndGarden";
 import GlowOnboarding from "./pages/Onboarding/GlowOnboarding";
 import Overlay from "./pages/Overlay/Overlay";
 
 const NAV_LINKS = [
-  { label: "Chat", path: "/chat" },
-  { label: "Personas", path: "/personas" },
-  { label: "Superpowers", path: "/superpowers" },
-  { label: "Memories", path: "/memories" },
-  { label: "Knowledge", path: "/knowledge-base" },
-  { label: "Dashboard", path: "/glow-dashboard" },
+  { label: "Foundation", path: "/the-glow-foundation" },
+  { label: "Glow Process", path: "/glow-process" },
+  { label: "GlowGPT", path: "/glowgpt" },
+  { label: "ARSA Foundation", path: "/arsafoundation" },
+  { label: "About", path: "/the-glow-project" },
 ];
 
 function GlobalNavBar() {
