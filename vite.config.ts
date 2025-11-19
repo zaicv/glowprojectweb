@@ -14,12 +14,8 @@ export default defineConfig({
   server: {
     historyApiFallback: true, // ✅ for React Router
     host: "0.0.0.0", // ✅ so Tailscale can reach it
-    port: 5173,
+    port: 5174,
     strictPort: true,
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, "100.83.147.76-key.pem")),
-      cert: fs.readFileSync(path.resolve(__dirname, "100.83.147.76.pem")),
-    },
   },
   build: {
     outDir: "dist",
