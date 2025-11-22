@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { GlowProjectNav } from "@/components/TheGlowProject/GlowProjectNav";
 import { GlowProjectFooter } from "@/components/TheGlowProject/GlowProjectFooter";
 import {
   Heart,
@@ -26,8 +25,6 @@ export default function TheGlowFoundation() {
 
   return (
     <div className="min-h-screen bg-white">
-      <GlowProjectNav ctaLabel="Join Community" ctaHref="/arsafoundation" />
-
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 px-6">
         <div

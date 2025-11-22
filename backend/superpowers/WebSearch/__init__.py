@@ -1,2 +1,0 @@
-# WebSearch superpower
-

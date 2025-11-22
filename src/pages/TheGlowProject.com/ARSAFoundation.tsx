@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { GlowProjectNav } from "@/components/TheGlowProject/GlowProjectNav";
 import { GlowProjectFooter } from "@/components/TheGlowProject/GlowProjectFooter";
 import {
   Heart,
@@ -32,8 +31,6 @@ export default function ARSAFoundation() {
 
   return (
     <div className="min-h-screen bg-white">
-      <GlowProjectNav ctaLabel="Find Support" ctaHref="/arsafoundation" />
-
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 px-6">
         <div className={`max-w-5xl mx-auto text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>

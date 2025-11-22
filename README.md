@@ -1,54 +1,144 @@
-# React + TypeScript + Vite
+# The Glow Project - Official Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The official website for The Glow Project, featuring AI-powered chat and user authentication.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Website**: Clean, responsive design showcasing The Glow Project
+- **AI Chat**: Interactive chat modal powered by OpenAI
+- **User Authentication**: Secure login/signup with Supabase
+- **5 Core Pages**:
+  - The Glow Foundation
+  - Glow Process
+  - GlowGPT
+  - ARSA Foundation
+  - About
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Frontend
+- **React 19** + **TypeScript**
+- **Vite** - Fast build tool
+- **React Router** - Navigation
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Animations
+- **Radix UI** - Component primitives
+- **Supabase** - Authentication
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Backend
+- **FastAPI** - Python web framework
+- **OpenAI** - AI chat functionality
+- **WebSocket** - Real-time communication
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- Python 3.10+
+- Supabase account
+- OpenAI API key
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone <your-repo-url>
+cd glowprojectweb
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. **Install frontend dependencies**
+```bash
+npm install
 ```
+
+3. **Install backend dependencies**
+```bash
+cd backend
+pip install -r requirements.txt
+```
+
+4. **Set up environment variables**
+
+Create a `.env` file in the backend directory:
+```env
+OPENAI_API_KEY=your_openai_api_key
+SUPABASE_URL=your_supabase_url
+SUPABASE_KEY=your_supabase_key
+```
+
+5. **Run the development servers**
+
+Frontend:
+```bash
+npm run dev
+```
+
+Backend (in another terminal):
+```bash
+cd backend
+python main.py
+```
+
+The website will be available at `http://localhost:5174`
+
+## 📁 Project Structure
+
+```
+glowprojectweb/
+├── backend/
+│   ├── config/          # Configuration
+│   ├── models/          # Data schemas
+│   ├── routes/          # API routes
+│   │   ├── chat.py     # Chat endpoints
+│   │   └── streaming.py # WebSocket streaming
+│   ├── services/        # Business logic
+│   │   ├── chat.py     # Chat service
+│   │   └── websocket_manager.py
+│   └── main.py         # FastAPI app
+├── src/
+│   ├── components/
+│   │   ├── auth/       # Authentication
+│   │   ├── Chat/       # Chat components
+│   │   ├── ChatModal.tsx # Chat modal
+│   │   ├── Global/     # Shared components
+│   │   ├── TheGlowProject/ # Website components
+│   │   └── ui/         # UI components
+│   ├── context/        # React contexts
+│   ├── pages/
+│   │   ├── Authentification/ # Login/Profile
+│   │   └── TheGlowProject.com/ # Website pages
+│   ├── services/       # API client
+│   ├── supabase/       # Supabase client
+│   └── App.tsx         # Main app
+└── public/             # Static assets
+```
+
+## 🎨 Development
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Preview Production Build
+```bash
+npm run preview
+```
+
+### Lint
+```bash
+npm run lint
+```
+
+## 📝 License
+
+Proprietary - © Isaiah Briggs
+
+## 🔗 Links
+
+- Website: https://theglowproject.com
+- Author: Isaiah Briggs
+
+---
+
+**Note**: This is the simplified website version of The Glow Project. For the full GlowGPT application, see the main branch.
