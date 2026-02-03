@@ -62,7 +62,7 @@ export function GlowProjectNav({
 
   return (
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-white/20 bg-transparent">
-      <div className="mx-auto flex h-20 w-full items-center justify-between px-6 bg-liquid-glass glass-premium py-10">
+      <div className="mx-auto flex h-20 w-full items-center justify-between px-6 bg-liquid-glass glass-premium py-10 shadow-sm shadow-black/10">
         
 
         <div className=" mx-auto items-center gap-6 md:flex bg-transparent w-full">

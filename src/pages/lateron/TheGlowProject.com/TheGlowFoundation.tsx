@@ -31,6 +31,15 @@ export default function TheGlowFoundation() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 px-6">
         <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: "url('/Branding%20Kit/newglowgpt.png')" }}
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/60 via-white/80 to-white"
+        />
+        <div
           className={`max-w-4xl mx-auto text-center transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}

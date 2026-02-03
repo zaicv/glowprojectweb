@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Sun, Moon, Heart, ArrowRight, Sparkles, Menu, X, Eye, Wind, Brain, Zap, Shield, BookOpen, Users, CheckCircle2, Quote } from 'lucide-react';
+import { GlowProjectNav } from '@/components/TheGlowProject/GlowProjectNav';
 
 export default function PhilosophyPage() {
   const [scrollY, setScrollY] = useState(0);
@@ -28,43 +29,8 @@ export default function PhilosophyPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-xl z-50 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-yellow-300/80 flex items-center justify-center">
-              <Sun className="w-5 h-5 text-black" />
-            </div>
-            <span className="text-xl font-semibold text-black">The Glow Project</span>
-          </div>
-          
-          <div className="hidden md:flex items-center gap-1">
-            <button className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black hover:bg-gray-50 rounded-lg transition-all">Philosophy</button>
-            <button className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black hover:bg-gray-50 rounded-lg transition-all">The Process</button>
-            <button className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black hover:bg-gray-50 rounded-lg transition-all">GlowGPT</button>
-            <button className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black hover:bg-gray-50 rounded-lg transition-all">Community</button>
-          </div>
+      <GlowProjectNav ctaLabel="Watch the Story" ctaHref="/arsafoundation" />
 
-          <div className="flex items-center gap-3">
-            <Button className="bg-black text-white hover:bg-gray-800 rounded-xl px-5 py-2 text-sm font-medium transition-all shadow-sm hover:shadow-md">
-              Start Your Journey
-            </Button>
-            <button className="md:hidden p-2 hover:bg-gray-50 rounded-lg transition-all" onClick={() => setMobileMenu(!mobileMenu)}>
-              {mobileMenu ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
-          </div>
-        </div>
-
-        {mobileMenu && (
-          <div className="md:hidden border-t border-gray-100 bg-white">
-            <div className="px-6 py-4 space-y-1">
-              <button className="w-full text-left px-4 py-3 text-sm font-medium text-gray-700 hover:text-black hover:bg-gray-50 rounded-lg transition-all">Philosophy</button>
-              <button className="w-full text-left px-4 py-3 text-sm font-medium text-gray-700 hover:text-black hover:bg-gray-50 rounded-lg transition-all">The Process</button>
-              <button className="w-full text-left px-4 py-3 text-sm font-medium text-gray-700 hover:text-black hover:bg-gray-50 rounded-lg transition-all">GlowGPT</button>
-              <button className="w-full text-left px-4 py-3 text-sm font-medium text-gray-700 hover:text-black hover:bg-gray-50 rounded-lg transition-all">Community</button>
-            </div>
-          </div>
-        )}
-      </nav>
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 px-6 overflow-hidden">
