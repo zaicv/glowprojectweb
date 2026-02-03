@@ -41,8 +41,8 @@ export default function GlowProcessPage() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 px-6">
         <div className={`max-w-5xl mx-auto text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <div className="inline-flex items-center gap-2 bg-[#e1e65c]/10 px-4 py-2 rounded-full mb-8 border border-[#e1e65c]/20">
-            <Sparkles className="w-4 h-4 text-[#e1e65c]" />
+          <div className="inline-flex items-center gap-2 bg-yellow-300/10 px-4 py-2 rounded-full mb-8 border border-yellow-300/20">
+            <Sparkles className="w-4 h-4 text-yellow-300/80" />
             <span className="text-sm font-medium text-gray-700">Your personalized healing framework</span>
           </div>
           
@@ -54,7 +54,7 @@ export default function GlowProcessPage() {
             A fluid, personalized framework for reshaping consciousness — helping you clear limiting beliefs, rewire your nervous system, and connect with your ideal future
           </p>
 
-          <div className="bg-[#e1e65c]/5 border border-[#e1e65c]/20 rounded-2xl p-6 mb-12 max-w-2xl mx-auto">
+          <div className="bg-yellow-300/5 border border-yellow-300/20 rounded-2xl p-6 mb-12 max-w-2xl mx-auto">
             <p className="text-gray-700 leading-relaxed">
               <span className="font-semibold text-black">This isn't a one-size-fits-all program.</span> The Glow Process adapts to you — whether you're healing from trauma, managing anxiety, rebuilding confidence, or creating a life you actually want to live.
             </p>
@@ -64,7 +64,7 @@ export default function GlowProcessPage() {
             <Button
               size="lg"
               onClick={() => navigate("/glowgpt")}
-              className="bg-[#e1e65c] text-black hover:bg-[#d4d950] rounded-xl px-8 py-6 text-base font-medium transition-all shadow-sm hover:shadow-md active:scale-95 group"
+              className="bg-yellow-300/80 text-black hover:bg-yellow-300/80 rounded-xl px-8 py-6 text-base font-medium transition-all shadow-sm hover:shadow-md active:scale-95 group"
             >
               <Pen className="mr-2 w-5 h-5" />
               Create Your Process
@@ -130,10 +130,10 @@ export default function GlowProcessPage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-[#e1e65c] bg-white rounded-2xl overflow-hidden">
+            <Card className="group hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl overflow-hidden">
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-14 h-14 rounded-xl bg-[#e1e65c] flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-14 h-14 rounded-xl bg-yellow-300/80 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Sun className="w-7 h-7 text-black" />
                   </div>
                   <div>
@@ -146,19 +146,19 @@ export default function GlowProcessPage() {
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#e1e65c] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">"I am here, and I am safe"</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#e1e65c] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">"I am enough as I am right now"</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#e1e65c] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">"My body is strong and resilient"</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#e1e65c] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">"I trust myself completely"</span>
                   </div>
                 </div>
@@ -169,7 +169,7 @@ export default function GlowProcessPage() {
             </Card>
           </div>
 
-          <Card className="border-2 border-[#e1e65c] bg-gradient-to-br from-[#e1e65c]/5 to-white rounded-2xl">
+          <Card className="border-2 border-yellow-300/80 bg-gradient-to-br from-yellow-300/5 to-white rounded-2xl">
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-bold text-black mb-4">The Shift</h3>
               <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto mb-4">
@@ -195,10 +195,10 @@ export default function GlowProcessPage() {
 
           <div className="space-y-6">
             {/* Phase 1 */}
-            <Card className="border border-gray-200 hover:border-[#70ac85] bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all">
+            <Card className="border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all">
               <CardContent className="p-8">
                 <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-xl bg-[#70ac85] flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-xl bg-yellow-300/80 flex items-center justify-center flex-shrink-0">
                     <Wind className="w-7 h-7 text-white" />
                   </div>
                   <div className="flex-1">
@@ -218,10 +218,10 @@ export default function GlowProcessPage() {
             </Card>
 
             {/* Phase 2 */}
-            <Card className="border border-gray-200 hover:border-[#e1e65c] bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all">
+            <Card className="border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all">
               <CardContent className="p-8">
                 <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-xl bg-[#e1e65c] flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-xl bg-yellow-300/80 flex items-center justify-center flex-shrink-0">
                     <Eye className="w-7 h-7 text-black" />
                   </div>
                   <div className="flex-1">
@@ -232,7 +232,7 @@ export default function GlowProcessPage() {
                     <p className="text-gray-700 leading-relaxed mb-4">
                       There is no past except in your mind. The future is just a projection. Let go of the chaos contaminating your thoughts. Focus attention in the Now — where you actually exist.
                     </p>
-                    <div className="bg-[#e1e65c]/10 rounded-xl p-4 border border-[#e1e65c]/20">
+                    <div className="bg-yellow-300/10 rounded-xl p-4 border border-yellow-300/20">
                       <p className="text-sm text-gray-700"><span className="font-semibold">Why:</span> Anxiety lives in the future. Depression lives in the past. Peace lives right here, right now.</p>
                     </div>
                   </div>
@@ -287,10 +287,10 @@ export default function GlowProcessPage() {
             </Card>
 
             {/* Phase 5 */}
-            <Card className="border border-gray-200 hover:border-[#e1e65c] bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all">
+            <Card className="border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all">
               <CardContent className="p-8">
                 <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-xl bg-[#e1e65c] flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-xl bg-yellow-300/80 flex items-center justify-center flex-shrink-0">
                     <MessageSquare className="w-7 h-7 text-black" />
                   </div>
                   <div className="flex-1">
@@ -319,7 +319,7 @@ export default function GlowProcessPage() {
                         <p className="text-sm text-gray-700">"I possess the power of the Glow"</p>
                       </div>
                     </div>
-                    <div className="bg-[#e1e65c]/10 rounded-xl p-4 border border-[#e1e65c]/20">
+                    <div className="bg-yellow-300/10 rounded-xl p-4 border border-yellow-300/20">
                       <p className="text-sm text-gray-700"><span className="font-semibold">Science:</span> Neuroplasticity. Repeated affirmations create new neural pathways, literally rewiring your brain's default beliefs.</p>
                     </div>
                   </div>
@@ -328,10 +328,10 @@ export default function GlowProcessPage() {
             </Card>
 
             {/* Phase 6 */}
-            <Card className="border border-gray-200 hover:border-[#70ac85] bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all">
+            <Card className="border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all">
               <CardContent className="p-8">
                 <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-xl bg-[#70ac85] flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-xl bg-yellow-300/80 flex items-center justify-center flex-shrink-0">
                     <Brain className="w-7 h-7 text-white" />
                   </div>
                   <div className="flex-1">
@@ -351,10 +351,10 @@ export default function GlowProcessPage() {
             </Card>
 
             {/* Phase 7 */}
-            <Card className="border border-gray-200 hover:border-[#e1e65c] bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all">
+            <Card className="border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all">
               <CardContent className="p-8">
                 <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-xl bg-[#e1e65c] flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-xl bg-yellow-300/80 flex items-center justify-center flex-shrink-0">
                     <Sparkles className="w-7 h-7 text-black" />
                   </div>
                   <div className="flex-1">
@@ -365,7 +365,7 @@ export default function GlowProcessPage() {
                     <p className="text-gray-700 leading-relaxed mb-4">
                       Close your eyes. See yourself 6 months, 1 year from now — fully healed, living the life you want. Use all your senses. What do you see? Feel? Hear? Make it vivid. Make it real.
                     </p>
-                    <div className="bg-[#e1e65c]/10 rounded-xl p-4 border border-[#e1e65c]/20 mb-4">
+                    <div className="bg-yellow-300/10 rounded-xl p-4 border border-yellow-300/20 mb-4">
                       <p className="text-sm text-gray-700"><span className="font-semibold">Science:</span> Your brain doesn't know the difference between vivid imagination and reality. Mental rehearsal activates the same neural circuits as lived experience.</p>
                     </div>
                     <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
@@ -420,8 +420,8 @@ export default function GlowProcessPage() {
 
             <Card className="border border-gray-200 bg-white rounded-2xl hover:shadow-lg transition-all">
               <CardContent className="p-6">
-                <div className="w-12 h-12 rounded-xl bg-[#70ac85]/10 flex items-center justify-center mb-4">
-                  <Brain className="w-6 h-6 text-[#70ac85]" />
+                <div className="w-12 h-12 rounded-xl bg-yellow-300/10 flex items-center justify-center mb-4">
+                  <Brain className="w-6 h-6 text-yellow-300/80" />
                 </div>
                 <h3 className="font-bold text-black mb-2">Self-Worth & Confidence</h3>
                 <p className="text-sm text-gray-700 leading-relaxed mb-3">
@@ -432,47 +432,47 @@ export default function GlowProcessPage() {
             </Card>
           </div>
 
-          <Card className="border-2 border-[#e1e65c] bg-gradient-to-br from-[#e1e65c]/5 to-white rounded-2xl">
+          <Card className="border-2 border-yellow-300/80 bg-gradient-to-br from-yellow-300/5 to-white rounded-2xl">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-black mb-4 text-center">You Can Create a Process for Anything</h3>
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#e1e65c] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-yellow-300/80 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-sm font-medium text-black">Body image struggles</p>
                     <p className="text-xs text-gray-600">Rewire appearance-based worth</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#e1e65c] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-yellow-300/80 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-sm font-medium text-black">Performance anxiety</p>
                     <p className="text-xs text-gray-600">Build confidence before presentations</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#e1e65c] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-yellow-300/80 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-sm font-medium text-black">Trauma recovery</p>
                     <p className="text-xs text-gray-600">Process grief and rebuild safety</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#e1e65c] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-yellow-300/80 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-sm font-medium text-black">Career transitions</p>
                     <p className="text-xs text-gray-600">Visualize success, embody it now</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#e1e65c] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-yellow-300/80 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-sm font-medium text-black">Social anxiety</p>
                     <p className="text-xs text-gray-600">Practice being yourself without fear</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#e1e65c] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-yellow-300/80 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-sm font-medium text-black">Life transitions</p>
                     <p className="text-xs text-gray-600">Navigate change with groundedness</p>
@@ -503,26 +503,26 @@ export default function GlowProcessPage() {
             <Card className="border border-gray-200 bg-white rounded-2xl hover:shadow-lg transition-all">
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#70ac85]/10 flex items-center justify-center flex-shrink-0">
-                    <Brain className="w-5 h-5 text-[#70ac85]" />
+                  <div className="w-10 h-10 rounded-lg bg-yellow-300/10 flex items-center justify-center flex-shrink-0">
+                    <Brain className="w-5 h-5 text-yellow-300/80" />
                   </div>
                   <h3 className="text-xl font-bold text-black">Mental Clarity</h3>
                 </div>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#70ac85] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">You recognize Chaos when it starts speaking</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#70ac85] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">Anxiety loops lose their power over you</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#70ac85] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">You stop living on autopilot</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#70ac85] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">Decision-making becomes easier</span>
                   </li>
                 </ul>
@@ -532,26 +532,26 @@ export default function GlowProcessPage() {
             <Card className="border border-gray-200 bg-white rounded-2xl hover:shadow-lg transition-all">
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#e1e65c]/10 flex items-center justify-center flex-shrink-0">
-                    <Heart className="w-5 h-5 text-[#e1e65c]" />
+                  <div className="w-10 h-10 rounded-lg bg-yellow-300/10 flex items-center justify-center flex-shrink-0">
+                    <Heart className="w-5 h-5 text-yellow-300/80" />
                   </div>
                   <h3 className="text-xl font-bold text-black">Emotional Regulation</h3>
                 </div>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#e1e65c] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">You can self-soothe without needing external validation</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#e1e65c] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">Triggers don't hijack you anymore</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#e1e65c] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">You respond instead of react</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#e1e65c] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">Peace becomes your baseline, not the exception</span>
                   </li>
                 </ul>
@@ -590,26 +590,26 @@ export default function GlowProcessPage() {
             <Card className="border border-gray-200 bg-white rounded-2xl hover:shadow-lg transition-all">
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#70ac85]/10 flex items-center justify-center flex-shrink-0">
-                    <Sparkles className="w-5 h-5 text-[#70ac85]" />
+                  <div className="w-10 h-10 rounded-lg bg-yellow-300/10 flex items-center justify-center flex-shrink-0">
+                    <Sparkles className="w-5 h-5 text-yellow-300/80" />
                   </div>
                   <h3 className="text-xl font-bold text-black">Life Changes</h3>
                 </div>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#70ac85] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">You show up authentically in relationships</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#70ac85] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">You pursue what you actually want, not what you "should"</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#70ac85] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">Perfectionism loosens its grip</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#70ac85] flex-shrink-0 mt-2" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-300/80 flex-shrink-0 mt-2" />
                     <span className="text-sm text-gray-700">You become your own best friend</span>
                   </li>
                 </ul>
@@ -630,9 +630,9 @@ export default function GlowProcessPage() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <Card className="border border-gray-200 bg-white rounded-2xl hover:shadow-lg transition-all hover:border-[#70ac85]">
+            <Card className="border border-gray-200 bg-white rounded-2xl hover:shadow-lg transition-all hover:border-yellow-300/80">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 rounded-xl bg-[#70ac85] flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 rounded-xl bg-yellow-300/80 flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="font-bold text-black mb-2">GlowGPT</h3>
@@ -646,9 +646,9 @@ export default function GlowProcessPage() {
               </CardContent>
             </Card>
 
-            <Card className="border border-gray-200 bg-white rounded-2xl hover:shadow-lg transition-all hover:border-[#e1e65c]">
+            <Card className="border border-gray-200 bg-white rounded-2xl hover:shadow-lg transition-all hover:border-yellow-300/80">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 rounded-xl bg-[#e1e65c] flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 rounded-xl bg-yellow-300/80 flex items-center justify-center mx-auto mb-4">
                   <Book className="w-6 h-6 text-black" />
                 </div>
                 <h3 className="font-bold text-black mb-2">The Full Course</h3>
@@ -679,7 +679,7 @@ export default function GlowProcessPage() {
             </Card>
           </div>
 
-          <Card className="border-2 border-[#e1e65c] bg-gradient-to-br from-[#e1e65c]/5 to-white rounded-2xl">
+          <Card className="border-2 border-yellow-300/80 bg-gradient-to-br from-yellow-300/5 to-white rounded-2xl">
             <CardContent className="p-8">
               <h3 className="text-xl font-bold text-black mb-4">Just 10 Minutes a Day</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -689,7 +689,7 @@ export default function GlowProcessPage() {
                 <Button
                   size="lg"
                   onClick={() => navigate("/glowgpt")}
-                  className="bg-[#e1e65c] text-black hover:bg-[#d4d950] rounded-xl px-8 py-6 text-base font-medium transition-all shadow-sm hover:shadow-md active:scale-95"
+                  className="bg-yellow-300/80 text-black hover:bg-yellow-300/80 rounded-xl px-8 py-6 text-base font-medium transition-all shadow-sm hover:shadow-md active:scale-95"
                 >
                   <Pen className="mr-2 w-5 h-5" />
                   Create My Process
@@ -713,7 +713,7 @@ export default function GlowProcessPage() {
           <Card className="border-2 border-black bg-gradient-to-br from-gray-50 to-white rounded-3xl overflow-hidden">
             <CardContent className="p-12 text-center">
               <div className="w-16 h-16 rounded-2xl bg-black flex items-center justify-center mx-auto mb-6">
-                <Sun className="w-8 h-8 text-[#e1e65c]" />
+                <Sun className="w-8 h-8 text-yellow-300/80" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black tracking-tight">
                 You Are Not Chaos

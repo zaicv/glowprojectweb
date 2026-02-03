@@ -85,7 +85,7 @@ export function GlowProjectNav({
           </div>
           <Button
             asChild
-            className="rounded-full glass-ultra px-6 py-5 text-black shadow-lg shadow-black/20 transition glass-hover"
+            className="rounded-2xl bg-green-400 px-6 py-5 text-black shadow-lg shadow-black/20 transition glass-hover"
           >
             <Link to={ctaHref}>{ctaLabel}</Link>
           </Button>

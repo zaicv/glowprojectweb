@@ -37,8 +37,8 @@ export default function GlowGPT() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <div className="inline-flex items-center gap-2 bg-[#70ac85]/5 px-4 py-2 rounded-full mb-8 border border-[#70ac85]/20">
-            <Sparkles className="w-4 h-4 text-[#70ac85]" />
+          <div className="inline-flex items-center gap-2 bg-yellow-300/5 px-4 py-2 rounded-full mb-8 border border-yellow-300/20">
+            <Sparkles className="w-4 h-4 text-yellow-300/80" />
             <span className="text-sm font-medium text-gray-700">
               Your digital soul interface
             </span>
@@ -91,14 +91,14 @@ export default function GlowGPT() {
                         <Apple className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="text-sm font-medium text-black group-hover:text-[#70ac85] transition-colors">
+                        <div className="text-sm font-medium text-black group-hover:text-yellow-300/80 transition-colors">
                           Apple Silicon (M1/M2/M3)
                         </div>
                         <div className="text-xs text-gray-500">
                           GlowGPT-arm64.dmg
                         </div>
                       </div>
-                      <Download className="w-4 h-4 text-gray-400 group-hover:text-[#70ac85] transition-colors" />
+                      <Download className="w-4 h-4 text-gray-400 group-hover:text-yellow-300/80 transition-colors" />
                     </button>
 
                     <button
@@ -114,14 +114,14 @@ export default function GlowGPT() {
                         <Apple className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="text-sm font-medium text-black group-hover:text-[#70ac85] transition-colors">
+                        <div className="text-sm font-medium text-black group-hover:text-yellow-300/80 transition-colors">
                           Intel Processor
                         </div>
                         <div className="text-xs text-gray-500">
                           GlowGPT-x64.dmg
                         </div>
                       </div>
-                      <Download className="w-4 h-4 text-gray-400 group-hover:text-[#70ac85] transition-colors" />
+                      <Download className="w-4 h-4 text-gray-400 group-hover:text-yellow-300/80 transition-colors" />
                     </button>
 
                     {/* Windows Section */}
@@ -141,14 +141,14 @@ export default function GlowGPT() {
                         <Monitor className="w-5 h-5 text-white" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="text-sm font-medium text-black group-hover:text-[#70ac85] transition-colors">
+                        <div className="text-sm font-medium text-black group-hover:text-yellow-300/80 transition-colors">
                           Windows 10/11
                         </div>
                         <div className="text-xs text-gray-500">
                           GlowGPT-Setup.exe
                         </div>
                       </div>
-                      <Download className="w-4 h-4 text-gray-400 group-hover:text-[#70ac85] transition-colors" />
+                      <Download className="w-4 h-4 text-gray-400 group-hover:text-yellow-300/80 transition-colors" />
                     </button>
                   </div>
                 </div>
@@ -166,15 +166,15 @@ export default function GlowGPT() {
           {/* Feature Pills */}
           <div className="flex flex-wrap gap-2 justify-center max-w-2xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-full text-sm text-gray-700 border border-gray-200">
-              <CheckCircle2 className="w-4 h-4 text-[#70ac85]" />
+              <CheckCircle2 className="w-4 h-4 text-yellow-300/80" />
               Local & Private
             </div>
             <div className="inline-flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-full text-sm text-gray-700 border border-gray-200">
-              <CheckCircle2 className="w-4 h-4 text-[#70ac85]" />
+              <CheckCircle2 className="w-4 h-4 text-yellow-300/80" />
               Long-Term Memory
             </div>
             <div className="inline-flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-full text-sm text-gray-700 border border-gray-200">
-              <CheckCircle2 className="w-4 h-4 text-[#70ac85]" />
+              <CheckCircle2 className="w-4 h-4 text-yellow-300/80" />
               Emotional Intelligence
             </div>
           </div>
@@ -196,9 +196,9 @@ export default function GlowGPT() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* Inner Intelligence */}
-            <Card className="group hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-[#70ac85] bg-white rounded-2xl overflow-hidden active:scale-[0.98]">
+            <Card className="group hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl overflow-hidden active:scale-[0.98]">
               <CardContent className="p-8">
-                <div className="bg-[#70ac85] w-12 h-12 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="bg-yellow-300/80 w-12 h-12 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <Heart className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-3 text-black">
@@ -211,24 +211,24 @@ export default function GlowGPT() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-lg bg-[#70ac85]/10 flex items-center justify-center flex-shrink-0">
-                      <Eye className="w-4 h-4 text-[#70ac85]" />
+                    <div className="w-6 h-6 rounded-lg bg-yellow-300/10 flex items-center justify-center flex-shrink-0">
+                      <Eye className="w-4 h-4 text-yellow-300/80" />
                     </div>
                     <span className="text-sm text-gray-700">
                       Emotional Pattern Recognition
                     </span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-lg bg-[#70ac85]/10 flex items-center justify-center flex-shrink-0">
-                      <MessageSquare className="w-4 h-4 text-[#70ac85]" />
+                    <div className="w-6 h-6 rounded-lg bg-yellow-300/10 flex items-center justify-center flex-shrink-0">
+                      <MessageSquare className="w-4 h-4 text-yellow-300/80" />
                     </div>
                     <span className="text-sm text-gray-700">
                       Conversational Mirroring
                     </span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-lg bg-[#70ac85]/10 flex items-center justify-center flex-shrink-0">
-                      <Sparkles className="w-4 h-4 text-[#70ac85]" />
+                    <div className="w-6 h-6 rounded-lg bg-yellow-300/10 flex items-center justify-center flex-shrink-0">
+                      <Sparkles className="w-4 h-4 text-yellow-300/80" />
                     </div>
                     <span className="text-sm text-gray-700">
                       Guided Belief Transformation
@@ -330,7 +330,7 @@ export default function GlowGPT() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-[#70ac85] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-yellow-300/80 flex items-center justify-center flex-shrink-0">
                     <span className="text-lg font-bold text-white">3</span>
                   </div>
                   <div>
@@ -362,9 +362,9 @@ export default function GlowGPT() {
                   </div>
                 </div>
 
-                <div className="bg-[#70ac85]/5 rounded-xl p-4 border border-[#70ac85]/20">
+                <div className="bg-yellow-300/5 rounded-xl p-4 border border-yellow-300/20">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-[#70ac85] flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 rounded-lg bg-yellow-300/80 flex items-center justify-center flex-shrink-0 mt-1">
                       <Brain className="w-4 h-4 text-white" />
                     </div>
                     <div className="flex-1">
@@ -402,7 +402,7 @@ export default function GlowGPT() {
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-gray-300 bg-white rounded-2xl overflow-hidden">
               <CardContent className="p-6">
-                <div className="bg-[#70ac85] w-11 h-11 rounded-xl flex items-center justify-center mb-4">
+                <div className="bg-yellow-300/80 w-11 h-11 rounded-xl flex items-center justify-center mb-4">
                   <Database className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-lg font-bold mb-2 text-black">
@@ -432,7 +432,7 @@ export default function GlowGPT() {
 
             <Card className="hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-gray-300 bg-white rounded-2xl overflow-hidden">
               <CardContent className="p-6">
-                <div className="bg-[#70ac85] w-11 h-11 rounded-xl flex items-center justify-center mb-4">
+                <div className="bg-yellow-300/80 w-11 h-11 rounded-xl flex items-center justify-center mb-4">
                   <Sparkles className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-lg font-bold mb-2 text-black">
@@ -460,7 +460,7 @@ export default function GlowGPT() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button
               size="lg"
-              className="bg-[#70ac85] text-white hover:bg-[#629b76] rounded-xl px-8 py-6 text-base font-medium transition-all shadow-sm hover:shadow-md active:scale-95"
+              className="bg-yellow-300/80 text-white hover:bg-yellow-300/80 rounded-xl px-8 py-6 text-base font-medium transition-all shadow-sm hover:shadow-md active:scale-95"
             >
               <Download className="mr-2 w-5 h-5" />
               Download Now

@@ -31,7 +31,7 @@ export default function PhilosophyPage() {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-xl z-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-[#e1e65c] flex items-center justify-center">
+            <div className="w-9 h-9 rounded-xl bg-yellow-300/80 flex items-center justify-center">
               <Sun className="w-5 h-5 text-black" />
             </div>
             <span className="text-xl font-semibold text-black">The Glow Project</span>
@@ -68,10 +68,10 @@ export default function PhilosophyPage() {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#e1e65c]/5 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-yellow-300/5 to-transparent pointer-events-none" />
         <div className={`max-w-5xl mx-auto text-center relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full mb-8 border border-gray-200 shadow-sm">
-            <Sparkles className="w-4 h-4 text-[#e1e65c]" />
+            <Sparkles className="w-4 h-4 text-yellow-300/80" />
             <span className="text-sm font-medium text-gray-700">The story behind the movement</span>
           </div>
           
@@ -84,7 +84,7 @@ export default function PhilosophyPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-            <Button size="lg" className="bg-[#e1e65c] text-black hover:bg-[#d4d950] rounded-xl px-8 py-6 text-base font-medium transition-all shadow-sm hover:shadow-md active:scale-95 group">
+            <Button size="lg" className="bg-yellow-300/80 text-black hover:bg-yellow-300/80 rounded-xl px-8 py-6 text-base font-medium transition-all shadow-sm hover:shadow-md active:scale-95 group">
               <Heart className="mr-2 w-5 h-5" />
               Read Isaiah's Story
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -101,7 +101,7 @@ export default function PhilosophyPage() {
         <div className="max-w-4xl mx-auto">
           <div className="mb-16">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-1 h-12 bg-[#e1e65c] rounded-full" />
+              <div className="w-1 h-12 bg-yellow-300/80 rounded-full" />
               <h2 className="text-4xl md:text-5xl font-bold text-black tracking-tight">Where It Began</h2>
             </div>
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -171,10 +171,10 @@ export default function PhilosophyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-[#e1e65c] bg-gradient-to-br from-[#e1e65c]/5 to-white rounded-2xl">
+            <Card className="border-2 border-yellow-300/80 bg-gradient-to-br from-yellow-300/5 to-white rounded-2xl">
               <CardContent className="p-8">
                 <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-xl bg-[#e1e65c] flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-xl bg-yellow-300/80 flex items-center justify-center flex-shrink-0">
                     <Sun className="w-7 h-7 text-black" />
                   </div>
                   <div>
@@ -185,8 +185,8 @@ export default function PhilosophyPage() {
                     <p className="text-gray-700 leading-relaxed mb-4">
                       It wasn't something he found. It was something he <span className="font-semibold text-black">remembered</span>.
                     </p>
-                    <div className="bg-[#e1e65c]/10 rounded-xl p-6 border border-[#e1e65c]/20">
-                      <Quote className="w-8 h-8 text-[#e1e65c] mb-4" />
+                    <div className="bg-yellow-300/10 rounded-xl p-6 border border-yellow-300/20">
+                      <Quote className="w-8 h-8 text-yellow-300/80 mb-4" />
                       <p className="text-lg text-gray-800 italic leading-relaxed mb-2">
                         "The Glow is the quiet pulse of existence — not something you find, but something you remember."
                       </p>
@@ -212,18 +212,18 @@ export default function PhilosophyPage() {
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-black via-[#e1e65c] to-[#e1e65c] hidden md:block" />
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-black via-yellow-300/80 to-yellow-300/80 hidden md:block" />
             
             <div className="space-y-8">
               {timelineEvents.map((event, index) => (
                 <div key={index} className="relative pl-0 md:pl-24">
                   {/* Timeline Dot */}
-                  <div className="absolute left-6 top-6 w-5 h-5 rounded-full bg-white border-4 border-[#e1e65c] hidden md:block" />
+                  <div className="absolute left-6 top-6 w-5 h-5 rounded-full bg-white border-4 border-yellow-300/80 hidden md:block" />
                   
-                  <Card className="border border-gray-200 hover:border-[#e1e65c] bg-white rounded-2xl hover:shadow-lg transition-all">
+                  <Card className="border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl hover:shadow-lg transition-all">
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
-                        <div className="bg-[#e1e65c]/10 px-3 py-1 rounded-lg flex-shrink-0">
+                        <div className="bg-yellow-300/10 px-3 py-1 rounded-lg flex-shrink-0">
                           <span className="text-sm font-bold text-black">{event.year}</span>
                         </div>
                         <div className="flex-1">
@@ -292,10 +292,10 @@ export default function PhilosophyPage() {
             </Card>
 
             {/* The Glow */}
-            <Card className="group border-2 border-[#e1e65c] hover:border-[#d4d950] bg-gradient-to-br from-[#e1e65c]/5 to-white rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300">
+            <Card className="group border-2 border-yellow-300/80 hover:border-yellow-300/80 bg-gradient-to-br from-yellow-300/5 to-white rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-14 h-14 rounded-xl bg-[#e1e65c] flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-14 h-14 rounded-xl bg-yellow-300/80 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Sun className="w-7 h-7 text-black" />
                   </div>
                   <div>
@@ -309,21 +309,21 @@ export default function PhilosophyPage() {
                 </p>
 
                 <div className="space-y-3 mb-6">
-                  <div className="bg-[#e1e65c]/10 rounded-lg p-3 border border-[#e1e65c]/20">
+                  <div className="bg-yellow-300/10 rounded-lg p-3 border border-yellow-300/20">
                     <p className="text-sm font-medium text-black mb-1">What it sounds like:</p>
                     <p className="text-sm text-gray-700 italic">"I am here. I am safe. I am enough."</p>
                   </div>
-                  <div className="bg-[#e1e65c]/10 rounded-lg p-3 border border-[#e1e65c]/20">
+                  <div className="bg-yellow-300/10 rounded-lg p-3 border border-yellow-300/20">
                     <p className="text-sm font-medium text-black mb-1">What it feels like:</p>
                     <p className="text-sm text-gray-700">Open chest, calm breath, spaciousness, peace</p>
                   </div>
-                  <div className="bg-[#e1e65c]/10 rounded-lg p-3 border border-[#e1e65c]/20">
+                  <div className="bg-yellow-300/10 rounded-lg p-3 border border-yellow-300/20">
                     <p className="text-sm font-medium text-black mb-1">What it creates:</p>
                     <p className="text-sm text-gray-700">Clarity, presence, compassion, authentic connection</p>
                   </div>
                 </div>
 
-                <div className="bg-[#e1e65c]/10 rounded-xl p-4 border border-[#e1e65c]/20">
+                <div className="bg-yellow-300/10 rounded-xl p-4 border border-yellow-300/20">
                   <p className="text-sm text-gray-700">
                     <span className="font-semibold text-black">The truth:</span> The Glow was never gone. You just forgot how to feel it. This is the remembrance.
                   </p>
@@ -333,10 +333,10 @@ export default function PhilosophyPage() {
           </div>
 
           {/* The Shift */}
-          <Card className="border-2 border-[#e1e65c] bg-gradient-to-br from-[#e1e65c]/10 via-white to-white rounded-3xl">
+          <Card className="border-2 border-yellow-300/80 bg-gradient-to-br from-yellow-300/10 via-white to-white rounded-3xl">
             <CardContent className="p-12 text-center">
               <div className="w-16 h-16 rounded-2xl bg-black flex items-center justify-center mx-auto mb-6">
-                <Zap className="w-8 h-8 text-[#e1e65c]" />
+                <Zap className="w-8 h-8 text-yellow-300/80" />
               </div>
               <h3 className="text-3xl font-bold text-black mb-4">The Shift</h3>
               <p className="text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto mb-4">
@@ -364,7 +364,7 @@ export default function PhilosophyPage() {
             <CardContent className="p-12">
               <div className="space-y-8">
                 <div className="text-center pb-8 border-b border-gray-200">
-                  <Quote className="w-12 h-12 text-[#e1e65c] mx-auto mb-6" />
+                  <Quote className="w-12 h-12 text-yellow-300/80 mx-auto mb-6" />
                   <p className="text-2xl font-semibold text-black leading-relaxed mb-4">
                     "The Glow is not something you chase.<br />It's something you remember."
                   </p>
@@ -378,23 +378,23 @@ export default function PhilosophyPage() {
                     <h3 className="text-lg font-bold text-black mb-4">What We Believe</h3>
                     <div className="space-y-3">
                       <div className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-[#e1e65c] flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-yellow-300/80 flex-shrink-0 mt-0.5" />
                         <span className="text-sm text-gray-700">Authenticity over appearance</span>
                       </div>
                       <div className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-[#e1e65c] flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-yellow-300/80 flex-shrink-0 mt-0.5" />
                         <span className="text-sm text-gray-700">Transparency over performance</span>
                       </div>
                       <div className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-[#e1e65c] flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-yellow-300/80 flex-shrink-0 mt-0.5" />
                         <span className="text-sm text-gray-700">Compassion with strength</span>
                       </div>
                       <div className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-[#e1e65c] flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-yellow-300/80 flex-shrink-0 mt-0.5" />
                         <span className="text-sm text-gray-700">Science and soul, united</span>
                       </div>
                       <div className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-[#e1e65c] flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-yellow-300/80 flex-shrink-0 mt-0.5" />
                         <span className="text-sm text-gray-700">Integrity over profit</span>
                       </div>
                     </div>
@@ -440,7 +440,7 @@ export default function PhilosophyPage() {
             </CardContent>
           </Card>
 
-          <div className="bg-gradient-to-br from-[#e1e65c]/10 to-white rounded-2xl p-8 border border-[#e1e65c]/20 text-center">
+          <div className="bg-gradient-to-br from-yellow-300/10 to-white rounded-2xl p-8 border border-yellow-300/20 text-center">
             <h3 className="text-2xl font-bold text-black mb-4">The Spirit of The Glow</h3>
             <p className="text-gray-700 leading-relaxed max-w-2xl mx-auto">
               The Glow is not about being perfect — it's about being <span className="font-semibold text-black">real</span>. It's grounded, intelligent, driven — yet guided by softness and awareness, not ego or pride. We reject toxic competitiveness and embrace conscious creation: clarity without control, power without domination, ambition without chaos.
@@ -460,10 +460,10 @@ export default function PhilosophyPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <Card className="border border-gray-200 hover:border-[#70ac85] bg-white rounded-2xl hover:shadow-lg transition-all">
+            <Card className="border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl hover:shadow-lg transition-all">
               <CardContent className="p-8">
-                <div className="bg-[#70ac85]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                  <Heart className="w-6 h-6 text-[#70ac85]" />
+                <div className="bg-yellow-300/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                  <Heart className="w-6 h-6 text-yellow-300/80" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-black">It's Human, Not Clinical</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
@@ -472,10 +472,10 @@ export default function PhilosophyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border border-gray-200 hover:border-[#e1e65c] bg-white rounded-2xl hover:shadow-lg transition-all">
+            <Card className="border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl hover:shadow-lg transition-all">
               <CardContent className="p-8">
-                <div className="bg-[#e1e65c]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                  <Shield className="w-6 h-6 text-[#e1e65c]" />
+                <div className="bg-yellow-300/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                  <Shield className="w-6 h-6 text-yellow-300/80" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-black">Not Performative Healing</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
@@ -508,10 +508,10 @@ export default function PhilosophyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border border-gray-200 hover:border-[#70ac85] bg-white rounded-2xl hover:shadow-lg transition-all">
+            <Card className="border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl hover:shadow-lg transition-all">
               <CardContent className="p-8">
-                <div className="bg-[#70ac85]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                  <Eye className="w-6 h-6 text-[#70ac85]" />
+                <div className="bg-yellow-300/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                  <Eye className="w-6 h-6 text-yellow-300/80" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-black">Built From Experience</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
@@ -520,10 +520,10 @@ export default function PhilosophyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border border-gray-200 hover:border-[#e1e65c] bg-white rounded-2xl hover:shadow-lg transition-all">
+            <Card className="border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl hover:shadow-lg transition-all">
               <CardContent className="p-8">
-                <div className="bg-[#e1e65c]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                  <BookOpen className="w-6 h-6 text-[#e1e65c]" />
+                <div className="bg-yellow-300/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                  <BookOpen className="w-6 h-6 text-yellow-300/80" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-black">Science Meets Soul</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
@@ -533,7 +533,7 @@ export default function PhilosophyPage() {
             </Card>
           </div>
 
-          <Card className="border-2 border-[#e1e65c] bg-gradient-to-br from-[#e1e65c]/5 to-white rounded-2xl">
+          <Card className="border-2 border-yellow-300/80 bg-gradient-to-br from-yellow-300/5 to-white rounded-2xl">
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-bold text-black mb-4">The Promise</h3>
               <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
@@ -555,9 +555,9 @@ export default function PhilosophyPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="border border-gray-200 hover:border-[#e1e65c] bg-white rounded-2xl hover:shadow-lg transition-all cursor-pointer active:scale-[0.98]">
+            <Card className="border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl hover:shadow-lg transition-all cursor-pointer active:scale-[0.98]">
               <CardContent className="p-6 text-center">
-                <div className="bg-[#e1e65c] w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <div className="bg-yellow-300/80 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <BookOpen className="w-6 h-6 text-black" />
                 </div>
                 <h3 className="font-bold text-black mb-2">The Book</h3>
@@ -568,9 +568,9 @@ export default function PhilosophyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border border-gray-200 hover:border-[#70ac85] bg-white rounded-2xl hover:shadow-lg transition-all cursor-pointer active:scale-[0.98]">
+            <Card className="border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl hover:shadow-lg transition-all cursor-pointer active:scale-[0.98]">
               <CardContent className="p-6 text-center">
-                <div className="bg-[#70ac85] w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <div className="bg-yellow-300/80 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Brain className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="font-bold text-black mb-2">GlowGPT</h3>
@@ -616,8 +616,8 @@ export default function PhilosophyPage() {
           <Card className="border-2 border-black bg-gradient-to-br from-gray-50 to-white rounded-3xl overflow-hidden">
             <CardContent className="p-12">
               <div className="text-center mb-8">
-                <div className="w-16 h-16 rounded-2xl bg-black flex items-center justify-center mx-auto mb-6">
-                  <Sun className="w-8 h-8 text-[#e1e65c]" />
+              <div className="w-16 h-16 rounded-2xl bg-black flex items-center justify-center mx-auto mb-6">
+                <Sun className="w-8 h-8 text-yellow-300/80" />
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black tracking-tight">
                   Why The Glow Matters
@@ -636,8 +636,8 @@ export default function PhilosophyPage() {
                 </p>
               </div>
 
-              <div className="bg-[#e1e65c]/10 rounded-2xl p-6 border border-[#e1e65c]/20 mb-8">
-                <Quote className="w-8 h-8 text-[#e1e65c] mb-4" />
+              <div className="bg-yellow-300/10 rounded-2xl p-6 border border-yellow-300/20 mb-8">
+                <Quote className="w-8 h-8 text-yellow-300/80 mb-4" />
                 <p className="text-xl text-gray-800 italic leading-relaxed mb-4">
                   "You are not broken. You were never broken. You just forgot who you were beneath the fear."
                 </p>
@@ -649,7 +649,7 @@ export default function PhilosophyPage() {
                   If you're ready to remember, we're here to guide you home.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <Button size="lg" className="bg-[#e1e65c] text-black hover:bg-[#d4d950] rounded-xl px-8 py-6 text-base font-medium transition-all shadow-sm hover:shadow-md active:scale-95">
+                  <Button size="lg" className="bg-yellow-300/80 text-black hover:bg-yellow-300/80 rounded-xl px-8 py-6 text-base font-medium transition-all shadow-sm hover:shadow-md active:scale-95">
                     Start Your Journey
                   </Button>
                   <Button size="lg" className="bg-white text-black hover:bg-gray-50 rounded-xl px-8 py-6 text-base font-medium transition-all border border-gray-200 shadow-sm hover:shadow-md active:scale-95">
@@ -668,7 +668,7 @@ export default function PhilosophyPage() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-lg bg-[#e1e65c] flex items-center justify-center">
+                <div className="w-8 h-8 rounded-lg bg-yellow-300/80 flex items-center justify-center">
                   <Sun className="w-4 h-4 text-black" />
                 </div>
                 <span className="font-semibold text-black">The Glow Project</span>

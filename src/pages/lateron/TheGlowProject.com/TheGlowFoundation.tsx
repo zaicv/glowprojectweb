@@ -36,7 +36,7 @@ export default function TheGlowFoundation() {
           }`}
         >
           <div className="inline-flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-full mb-8 border border-gray-100">
-            <Sparkles className="w-4 h-4 text-[#e1e65c]" />
+            <Sparkles className="w-4 h-4 text-yellow-300/80" />
             <span className="text-sm font-medium text-gray-700">
               Healing from the inside out
             </span>
@@ -55,7 +55,7 @@ export default function TheGlowFoundation() {
             <Button
               size="lg"
               onClick={() => navigate("/glow-process")}
-              className="bg-[#e1e65c] text-black hover:bg-[#d4d950] rounded-xl px-8 py-6 text-base font-medium transition-all shadow-sm hover:shadow-md active:scale-95 group"
+              className="bg-yellow-300/80 text-black hover:bg-yellow-300/80 rounded-xl px-8 py-6 text-base font-medium transition-all shadow-sm hover:shadow-md active:scale-95 group"
             >
               Explore The Glow Process
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -87,9 +87,9 @@ export default function TheGlowFoundation() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* The Glow Card */}
-            <Card className="group hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-[#e1e65c] bg-white rounded-2xl overflow-hidden cursor-pointer active:scale-[0.98]">
+            <Card className="group hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-yellow-300/80 bg-white rounded-2xl overflow-hidden cursor-pointer active:scale-[0.98]">
               <CardContent className="p-8">
-                <div className="bg-[#e1e65c] w-12 h-12 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="bg-yellow-300/80 w-12 h-12 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <Sun className="w-6 h-6 text-black" />
                 </div>
                 <h3 className="text-2xl font-bold mb-3 text-black">
@@ -102,8 +102,8 @@ export default function TheGlowFoundation() {
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-lg bg-[#e1e65c]/10 flex items-center justify-center flex-shrink-0">
-                      <BookOpen className="w-4 h-4 text-[#e1e65c]" />
+                    <div className="w-6 h-6 rounded-lg bg-yellow-300/10 flex items-center justify-center flex-shrink-0">
+                      <BookOpen className="w-4 h-4 text-yellow-300/80" />
                     </div>
                     <span className="text-sm text-gray-700">
                       The Glow Book & Philosophy
@@ -118,8 +118,8 @@ export default function TheGlowFoundation() {
                     </span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-lg bg-[#e1e65c]/10 flex items-center justify-center flex-shrink-0">
-                      <Youtube className="w-4 h-4 text-[#e1e65c]" />
+                    <div className="w-6 h-6 rounded-lg bg-yellow-300/10 flex items-center justify-center flex-shrink-0">
+                      <Youtube className="w-4 h-4 text-yellow-300/80" />
                     </div>
                     <span className="text-sm text-gray-700">
                       YouTube & Courses
@@ -204,7 +204,7 @@ export default function TheGlowFoundation() {
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-gray-300 bg-white rounded-2xl overflow-hidden cursor-pointer active:scale-[0.98]">
               <CardContent className="p-6">
-                <div className="bg-[#e1e65c] w-11 h-11 rounded-xl flex items-center justify-center mb-4">
+                <div className="bg-yellow-300/80 w-11 h-11 rounded-xl flex items-center justify-center mb-4">
                   <BookOpen className="w-5 h-5 text-black" />
                 </div>
                 <h3 className="text-lg font-bold mb-2 text-black">
