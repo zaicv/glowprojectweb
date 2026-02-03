@@ -53,7 +53,7 @@ export function GlowProjectNav({
       {active && (
         <motion.span
           layoutId="glow-nav-pill"
-          className="absolute inset-0 rounded-full bg-green-500 shadow-lg ring-1 ring-black/5"
+          className="absolute inset-0 rounded-full bg-yellow-300/80 shadow-lg ring-1 ring-black/5"
           transition={{ type: "spring", stiffness: 350, damping: 30 }}
         />
       )}
