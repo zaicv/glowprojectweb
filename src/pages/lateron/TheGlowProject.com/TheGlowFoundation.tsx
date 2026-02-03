@@ -32,7 +32,7 @@ export default function TheGlowFoundation() {
       <section className="relative pt-32 pb-24 px-6">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-20"
+          className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-20 dimensional-fader"
           style={{ backgroundImage: "url('/Branding%20Kit/newglowgpt.png')" }}
         />
         <div
