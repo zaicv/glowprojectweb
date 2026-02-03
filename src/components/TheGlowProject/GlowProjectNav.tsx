@@ -61,11 +61,14 @@ export function GlowProjectNav({
   );
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 border-b border-white/20 bg-white/70 backdrop-blur-2xl">
-      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-white/20 bg-transparent">
+      <div className="mx-auto flex h-20 w-full items-center justify-between px-6 bg-red-400">
+        
+
+        <div className=" mx-auto items-center gap-6 md:flex bg-orange-900 w-full">
         <Link
           to="/the-glow-foundation"
-          className="flex items-center gap-3 rounded-full bg-white/40 px-4 py-2 shadow-inner ring-1 ring-white/60 transition hover:bg-white/70"
+          className="flex items-center gap-3 rounded-3xl bg-white/40 px-4 py-2  liquid-glass glass-premium ring-white/60 transition hover:bg-white/70"
         >
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#e1e65c] to-[#70ac85] text-black">
             <Sun className="h-5 w-5" />
@@ -77,14 +80,12 @@ export function GlowProjectNav({
             <p className="text-base font-semibold text-black">Project</p>
           </div>
         </Link>
-
-        <div className="hidden items-center gap-6 md:flex">
-          <div className="relative flex w-[520px] items-center gap-1 rounded-full bg-white/40 p-1 shadow-inner ring-1 ring-white/60">
+          <div className="mx-auto relative flex w-[520px] items-center gap-1 rounded-full bg-blue-500 p-1 shadow-inner ring-1 ring-white/60">
             {navItems.map((item) => navPill(item, isActive(item.href)))}
           </div>
           <Button
             asChild
-            className="rounded-full bg-black px-6 py-5 text-white shadow-lg shadow-black/20 transition hover:bg-black/80"
+            className="rounded-full bg-yellow-500 px-6 py-5 text-white shadow-lg shadow-black/20 transition hover:bg-black/80"
           >
             <Link to={ctaHref}>{ctaLabel}</Link>
           </Button>

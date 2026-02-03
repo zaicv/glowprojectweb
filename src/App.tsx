@@ -215,13 +215,12 @@ function App() {
                       <AppSidebar />
                       <SidebarInset>
                         <PinchToHomeHandler />
-                        <GlobalNavBar />
                         <div className="fixed top-20 right-4 z-50">
                           <NotificationDrawer />
                         </div>
                         <div>
                           <Routes>
-                            <Route path="/" element={<Chat />} />
+                            <Route path="/" element={<TheGlowFoundation />} />
                             <Route path="/glowcloud" element={<GlowCloud />} />
                             <Route path="/youtube" element={<YouTube />} />
                             <Route path="/alauralog" element={<AlauraLog />} />
