@@ -9,7 +9,7 @@ import {
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
-import { Menu, Sun } from "lucide-react";
+import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type NavItem = {
@@ -45,15 +45,15 @@ export function GlowProjectNav({
       key={item.href}
       to={item.href}
       className={cn(
-        "relative flex-1 rounded-full px-4 py-2 text-center text-sm font-medium transition-colors",
-        active ? "text-black" : "text-gray-600 hover:text-black"
+        "relative flex-1 rounded-full px-4 py-3 text-center text-sm font-medium transition-colors glass-hover",
+        active ? "text-black" : "text-black hover:text-black"
       )}
     >
       <span className="relative z-10">{item.label}</span>
       {active && (
         <motion.span
           layoutId="glow-nav-pill"
-          className="absolute inset-0 rounded-full bg-white/80 shadow-lg ring-1 ring-black/5"
+          className="absolute inset-0 rounded-full bg-green-500 shadow-lg ring-1 ring-black/5"
           transition={{ type: "spring", stiffness: 350, damping: 30 }}
         />
       )}
@@ -62,30 +62,30 @@ export function GlowProjectNav({
 
   return (
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-white/20 bg-transparent">
-      <div className="mx-auto flex h-20 w-full items-center justify-between px-6 bg-red-400">
+      <div className="mx-auto flex h-20 w-full items-center justify-between px-6 bg-liquid-glass glass-premium py-10">
         
 
-        <div className=" mx-auto items-center gap-6 md:flex bg-orange-900 w-full">
+        <div className=" mx-auto items-center gap-6 md:flex bg-transparent w-full">
         <Link
           to="/the-glow-foundation"
-          className="flex items-center gap-3 rounded-3xl bg-white/40 px-4 py-2  liquid-glass glass-premium ring-white/60 transition hover:bg-white/70"
+          className="flex items-center gap-3 rounded-3xl px-4 py-2   ring-white/60 transition hover:bg-white/70"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#e1e65c] to-[#70ac85] text-black">
-            <Sun className="h-5 w-5" />
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#d2c74e] to-[#007bff] text-black">
+            <img src="/Branding Kit/PhoebeLogo.PNG" alt="The Glow Project" className="h-13 w-13 object-contain" />
           </div>
           <div className="text-left">
             <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
-              The Glow
+              The Glow Project
             </p>
-            <p className="text-base font-semibold text-black">Project</p>
+           
           </div>
         </Link>
-          <div className="mx-auto relative flex w-[520px] items-center gap-1 rounded-full bg-blue-500 p-1 shadow-inner ring-1 ring-white/60">
+          <div className="mx-auto relative flex w-[820px] items-center gap-1 rounded-full  p-1 ">
             {navItems.map((item) => navPill(item, isActive(item.href)))}
           </div>
           <Button
             asChild
-            className="rounded-full bg-yellow-500 px-6 py-5 text-white shadow-lg shadow-black/20 transition hover:bg-black/80"
+            className="rounded-full glass-ultra px-6 py-5 text-black shadow-lg shadow-black/20 transition glass-hover"
           >
             <Link to={ctaHref}>{ctaLabel}</Link>
           </Button>
@@ -106,7 +106,7 @@ export function GlowProjectNav({
               <SheetHeader className="mb-6 text-left">
                 <SheetTitle className="flex items-center gap-2 text-xl font-semibold text-black">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#e1e65c] to-[#70ac85] text-black">
-                    <Sun className="h-5 w-5" />
+                    <img src="/Branding Kit/PhoebeLogo.PNG" alt="The Glow Project" className="h-5 w-5 object-contain" />
                   </div>
                   The Glow Project
                 </SheetTitle>
