@@ -9,6 +9,9 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
+      // Stub Supabase — package removed for marketing deployment
+      "@supabase/supabase-js": path.resolve(__dirname, "src/supabase-stub.ts"),
+      "@supabase/ssr": path.resolve(__dirname, "src/supabase-stub.ts"),
     },
   },
   server: {
