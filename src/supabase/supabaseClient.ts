@@ -1,49 +1,44 @@
-// src/supabase/supabaseClient.ts
-import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+/**
+ * Supabase stub — package removed for marketing site deployment.
+ * Restore @supabase/supabase-js and replace with real client when re-enabling backend.
+ */
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string | undefined;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
+const noop = () => {};
+const reject = (msg = "Supabase is disabled") => Promise.reject(new Error(msg));
+const resolveNull = () => Promise.resolve({ data: null, error: null });
+const resolveEmpty = () => Promise.resolve({ data: [], error: null });
 
-const missingConfigMessage =
-  "Supabase credentials are not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to enable backend features.";
+const stubChain = () => ({
+  select: () => ({ data: null, error: null }),
+  insert: () => ({ data: null, error: null }),
+  update: () => ({ data: null, error: null }),
+  delete: () => ({ data: null, error: null }),
+  eq: () => stubChain(),
+  single: () => resolveNull(),
+});
 
-// Only use createClient when we have valid-looking credentials (Vercel/env can pass "undefined" or placeholders)
-const hasValidUrl =
-  typeof supabaseUrl === "string" &&
-  supabaseUrl.startsWith("https://") &&
-  supabaseUrl.length > 10 &&
-  !["undefined", "null", ""].includes(supabaseUrl.trim());
-const hasValidKey =
-  typeof supabaseAnonKey === "string" &&
-  supabaseAnonKey.length > 20 &&
-  !["undefined", "null", ""].includes(supabaseAnonKey.trim());
+export const supabase = {
+  auth: {
+    getSession: resolveNull,
+    getUser: resolveNull,
+    signInWithPassword: () => reject(),
+    signUp: () => reject(),
+    signOut: resolveNull,
+    onAuthStateChange: () => ({ data: { subscription: { unsubscribe: noop } } }),
+  },
+  from: () => stubChain(),
+  storage: {
+    from: () => ({
+      upload: () => reject(),
+      getPublicUrl: () => ({ data: { publicUrl: "" } }),
+      remove: () => resolveEmpty(),
+    }),
+  },
+  channel: () => ({
+    on: () => ({ subscribe: () => ({ unsubscribe: noop }) }),
+    subscribe: () => ({ unsubscribe: noop }),
+  }),
+  removeChannel: noop,
+} as any;
 
-const fallbackClient = new Proxy(
-  {},
-  {
-    get() {
-      throw new Error(missingConfigMessage);
-    },
-  }
-) as SupabaseClient<any, "public", any>;
-
-function createSupabaseClient(): SupabaseClient<any, "public", any> {
-  if (!hasValidUrl || !hasValidKey) {
-    return fallbackClient;
-  }
-  try {
-    return createClient(supabaseUrl!, supabaseAnonKey!, {
-      auth: {
-        persistSession: true,
-        autoRefreshToken: true,
-        detectSessionInUrl: true,
-      },
-    });
-  } catch {
-    console.warn(missingConfigMessage);
-    return fallbackClient;
-  }
-}
-
-export const supabase = createSupabaseClient();
-export const isSupabaseConfigured = hasValidUrl && hasValidKey;
+export const isSupabaseConfigured = false;
