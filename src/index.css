@@ -51,7 +51,7 @@ body,
   height: 100dvh; /* dynamic vh for desktop/mobile */
   margin: 0;
   padding: 0;
-  background-color: #3a3a3a;
+  background-color: #ffffff;
 }
 
 /* Override background for overlay route */

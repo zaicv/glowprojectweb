@@ -18,8 +18,8 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { label: "Foundation", href: "/the-glow-foundation" },
-  { label: "Glow Process", href: "/glow-process" },
+  { label: "Overview", href: "/the-glow-foundation" },
+  { label: "The Glow Process", href: "/glow-process" },
   { label: "GlowGPT", href: "/glowgpt" },
   { label: "ARSA Foundation", href: "/arsafoundation" },
   { label: "About", href: "/the-glow-project" },
@@ -70,7 +70,7 @@ export function GlowProjectNav({
           to="/the-glow-foundation"
           className="flex items-center gap-3 rounded-3xl px-4 py-2   ring-white/60 transition hover:bg-white/70"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#d2c74e] to-[#007bff] text-black">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-300/80 text-black">
             <img src="/Branding Kit/PhoebeLogo.PNG" alt="The Glow Project" className="h-13 w-13 object-contain" />
           </div>
           <div className="text-left">
